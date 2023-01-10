@@ -6,7 +6,7 @@ let suma = 0;
 //process suma =0  + elelemto de totates = 1, return = 1
 //        suma = 1 + elemento de totales  = 2, return 3
 const rta = totales.reduce((suma, element) => suma + element, 0);
-console.log(rta);
+/* console.log(rta); */
 
 const numeros = [1, 1, 2, 3, 3, 4];
 //process el objeto inicia vacio
@@ -39,4 +39,14 @@ const rta1 = info
         }
         return obj;
     }, {});
-console.log(rta1);
+/* console.log(rta1); */
+
+function calcSum(numbers) {
+    return numbers.reduce((acumulador, onItem) => {
+        acumulador = acumulador + onItem;
+        console.log("item is " + acumulador);
+        return acumulador;
+    }, 0);
+}
+
+console.log(calcSum([1, 1, 1, 1, 1, 1, 1]));
